@@ -22,8 +22,7 @@ namespace ApiRandom.Controllers
             string queueNameImpar = "colaimpar";
             string mensaje = JsonConvert.SerializeObject(data);
 
-            string str = data.RandNum;
-            int num = Convert.ToInt32(str);
+            int num = data.RandNum;
 
             if (num % 2 == 0)
             {

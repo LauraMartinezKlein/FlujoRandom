@@ -5,7 +5,7 @@
     public class Data
     {
         [Key]
-        public string RandNum { get; set; }
+        public int RandNum { get; set; }
         [DataType(DataType.DateTime)]
         [Required]
         public DateTime EventDate { get; set; }
