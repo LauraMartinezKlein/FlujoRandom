@@ -22,7 +22,10 @@ namespace ApiRandom.Controllers
             string queueNameImpar = "colaimpar";
             string mensaje = JsonConvert.SerializeObject(data);
 
-            if (data.RandNum % 2 == 0)
+            string str = data.RandNum;
+            int num = Convert.ToInt32(str);
+
+            if (num % 2 == 0)
             {
                 await using (ServiceBusClient client = new ServiceBusClient(connectionStringPar))
                 {
